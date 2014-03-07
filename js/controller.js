@@ -2,7 +2,7 @@
 
 eweekApp.controller('MajorListCtrl', function ($scope) {
 	$scope.majors = [
-		{"name": "BioEngingeering",
+		{"name": "BioEngineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
 				{"event":"Puzzle Hunt", "event-score":30},
@@ -137,7 +137,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 	];
 
 	$scope.orderProp = '-score';
-	$scope.limitNum = 9;
+	$scope.limitNum = 10;
 	$scope.leaderboardShrink = "See all majors.";
 
 	var seeAll = false;
@@ -175,12 +175,12 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"day": "Monday",
 			"dateTime":"3/11, 12-2 PM",
 			"location": "Bechtel Terrace",
-			"description": "Start off EWeek by grabbing some milk and cookies and socializing with your fellow engineers at the Bechtel Terrace (right outside the ESS office). We will have an assortment of different cookies and they're free so be sure to stop by!",
+			"description": "Start off E-Week by grabbing some milk and cookies and socializing with your fellow engineers at the Bechtel Terrace (right outside the ESS office). We will have an assortment of different cookies and they're free so be sure to stop by!",
 			"tag": "Meet & Eat",
 			"imgUrl": "img/milk.png"},
 		{"name": "Engineering Showcase",
 			"day": "Monday",
-			"dateTime":"3/12, 7-9 PM",
+			"dateTime":"3/12, 6-8 PM",
 			"location": "Hearst Mining Building",
 			"description": "The engineering showcase is a chance for all clubs to show off the projects and devices that they have been working on. Located directly outside and after the kickoff event, each group will be set up to show you their work, so come check out what our Berkeley engineers have been building! If you or your club has completed a cool engineering project, sign up to show it! Don't be shy.",
 			"tag": "Meet & Eat",
@@ -196,7 +196,7 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"day": "Friday",
 			"dateTime":"3/14, 2-4 PM",
 			"location": "Hearst Mining Building",
-			"description": "The annual E-week carnival is one of the most highly anticipated events of the week! This year’s carnival will feature, snacks, music, games, and of course lots and lots of pie. This event is a fun way to see what different clubs do and for you to meet fellow engineers outside an academic setting. If you have an idea for a carnival game as part of a club, sign up to do a booth!",
+			"description": "The annual E-week carnival is one of the most highly anticipated events of the week! The carnival will feature, snacks, music, games, and of course lots and lots of pie. This event is a fun way to see what different clubs do and for you to meet fellow engineers outside an academic setting. If you have an idea for a carnival game as part of a club, sign up to do a booth!",
 			"tag": "Meet & Eat",
 			"imgUrl": "img/carnival.png"},
 		{"name": "Casino Night",
@@ -205,11 +205,11 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"location": "Hearst Mining Lobby",
 			"description": "Come by ESC's Casino Night! There will be multiple tables set up for poker, roulette, pai gao, and more, with professional card dealers. There will also be entertainment, including a magic act, and refreshments will be provided.",
 			"tag": "Meet & Eat",
-			"imgUrl": "img/network.png"},
+			"imgUrl": "img/casino.png"},
 		{"name": "Dean Drako Kickoff",
 			"day": "Monday",
 			"dateTime":"3/10, 5-6 PM",
-			"location": "105 Stanley",
+			"location": "Hearst Mining",
 			"description": "Keynote speaker Dean Drako will draw from his experience in founding and building 6 technology start-up companies - sometimes two at a time, including his recent companies: Barracuda Networks - November 2013 IPO; IC Manage - a Deloitte Fast500 company; and Eagle Eye Networks - launched in January 2014.  Drako will share some of his techniques and pitfalls to avoid, to help you successfully build a strong technology company with sustainable growth.",
 			"tag": "Speakers",
 			"imgUrl": "img/keynote.png"},
@@ -243,7 +243,7 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"imgUrl": "img/design.png"},
 		{"name": "Duct Taping",
 			"day": "Thursday",
-			"dateTime":"3/14, 3-4 PM",
+			"dateTime":"3/13, 3-4 PM",
 			"location": "Wurster North Wall",
 			"description": "As an interdepartmental competition, each group will work to duct tape one member of their team to a wall as quickly as possible. Members will have to answer trivia questions in order to receive more tape, as each group will only be given a limited initial amount. Snacks will be provided and there will be people stuck on walls so be sure to stop by!",
 			"tag": "Compete",
