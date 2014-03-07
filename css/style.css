@@ -1,0 +1,109 @@
+body {
+    background-color: #FFFFCC;
+    color: #000000;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.navbar-inverse {
+    background-color: #3366CC;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFCC00;
+    opacity: 0.7;
+    border-left: 3px solid #99CCFF;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #3366CC;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #FDB515;
+    opacity: 1.0;
+}
+
+.jumbotron {
+    background-color: #3366CC;
+    color: #FFCC00;
+}
+
+.jumbotron > h2 {
+    margin-left: -200px;
+    margin-bottom: -30px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.jumbotron > h3 {
+    margin-left: 200px;
+    margin-top: -10px;
+}
+
+.jumbotron > h5 {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+    margin-bottom: -30px;
+}
+
+.jumbotron .eventTags {
+    margin-top: 30px;
+    margin-left: 14px;
+}
+
+.jumbotron a, .jumbotron a:visited {
+    color: #99CCFF;
+}
+
+.jumbotron a:hover {
+    color: #fff;
+}
+
+.jumbotron .img-circle {
+    background-color: #99CCFF;
+    border: 2px solid #3399CC;
+}
+
+.jumbotron .img-circle:hover {
+    background-color: #fff;
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #3366CC;
+    font-size: 12px;
+    color: #3366CC;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+footer > h5 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.img-thumbnail {
+    border: 3.5px solid #3366CC;
+    background-color: #FFFFCC;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    margin-top: 30px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  body {
+    margin-top: 130px;
+  }
+
+}
