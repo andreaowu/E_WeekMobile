@@ -135,13 +135,13 @@
 	      <h3 id="date" style="margin-left:150px;">March 10 - 15, 2014</h3>
 
               <div class="row">
-                  <div class="col-md-2 eventTags text-center hidden-xs" ng-repeat="eventTag in eventTags | limitTo: 3">
+                  <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:70px;" ng-repeat="eventTag in eventTags | limitTo: 3">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
                       <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}"></a>
                   </div> 
 
               <!-- Leaderboard -->
-              <div class="col-md-5" ng-controller="MajorListCtrl" style="padding-left:100px;padding-right:-100px;">
+              <div class="col-md-5" ng-controller="MajorListCtrl" style="padding-left:100px;padding-top:20px;">
                   <table class="table table-striped">
                       <thead>
                           <tr>
@@ -158,13 +158,13 @@
                   </table>
               </div>
 
-		  <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-220px;margin-left:100px;" ng-repeat="eventTag in eventTags | filter: {name: 'Professional Development'}">
+		  <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-230px;margin-left:110px;" ng-repeat="eventTag in eventTags | filter: {name: 'Professional Development'}">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
-                      <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
+                      <img class="img-responsive img-circle" src="{{eventTag.imgUrl}}">
                   </div> 
-		 <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-220px;margin-left:325px;" ng-repeat="eventTag in eventTags | filter: {name: 'Outreach'}">
+		 <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-230px;margin-left:305px;" ng-repeat="eventTag in eventTags | filter: {name: 'Outreach'}">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
-                      <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
+                      <img class="img-responsive img-circle" src="{{eventTag.imgUrl}}">
                   </div>
 
                   <div class="col-xs-12 eventTags visible-xs" ng-repeat="eventTag in eventTags | limitTo: 5">
@@ -179,7 +179,7 @@
 
               </div>
 	      <br><br>
-              <h5>Weeklong activities to celebrate engineering, not study, and to enjoy the sunshine!</h5>
+              <h5>Weeklong activities to celebrate engineering, to not study, and to enjoy the sunshine!</h5>
 
           </div>
          </div>
