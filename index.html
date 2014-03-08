@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li>
-          	<a href="#monday">
+          	<a href="#monday" onclick="iconScroll(this.href)">
           		<div class="row-fluid">
                       <strong>
                         Mon
@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-             <a href="#tuesday">
+             <a href="#tuesday" onclick="iconScroll(this.href)">
                 <div class="row-fluid">
                   <strong>
                     Tues
@@ -58,7 +58,7 @@
             </a>
         </li>
         <li>
-         <a href="#wednesday">
+         <a href="#wednesday" onclick="iconScroll(this.href)">
             <div class="row-fluid">
               <strong>
                 Wed
@@ -71,7 +71,7 @@
         </a>
     </li>
     <li>
-     <a href="#thursday">
+     <a href="#thursday" onclick="iconScroll(this.href)">
         <div class="row-fluid">
           <strong>
             Thurs
@@ -85,7 +85,7 @@
     </a>
   </li>
   <li>
-     <a href="#friday">
+     <a href="#friday" onclick="iconScroll(this.href)">
         <div class="row-fluid">
           <strong>
             Fri
@@ -98,7 +98,7 @@
     </a>
   </li>
   <li>
-     <a href="#saturday">
+     <a href="#saturday" onclick="iconScroll(this.href)">
         <div class="row-fluid">
           <strong>
             Sat
@@ -128,16 +128,16 @@
       <!-- Hero -->
       <div class="row">
           <div class="col-md-8 jumbotron text-center" style="padding-bottom:-100px;">
-	      <h2>UC Berkeley</h2>
-              <h1>Engineers Week</h1>
-              <h3>March 10 - 15, 2014</h3>
+	      <h2 id="school">UC Berkeley</h2>
+              <h1 id="category">Engineers Week</h1>
+              <h3 id="eventsList" style="padding-left:210px;">March 10 - 15, 2014</h3>
               <div class="row">
                   <div class="col-xs-2 eventTags text-center hidden-xs" ng-repeat="eventTag in eventTags | limitTo: 5">
-                      <a href="#{{eventTag.link}}" id="iconRow" onclick="iconScroll()">
-                      <img class="img-responsive img-circle" src="{{eventTag.imgUrl}}">
+                      <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
+                      <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
                   </div> 
                   <div class="col-xs-12 eventTags visible-xs" ng-repeat="eventTag in eventTags | limitTo: 5">
-                    <a href="#{{eventTag.link}}">
+                    <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
                       <div class="row">
                         <div class="col-xs-3">
                           <img class="img-responsive img-circle" src="{{eventTag.imgUrl}}">
@@ -174,9 +174,9 @@
           <div ng-view></div>
 
           <footer>
-              <h5>Berkeley Engineers Week is a project of the <a href="http://esc.berkeley.edu">Engineering Student Council</a> of UC Berkeley's <a href="http://coe.berkeley.edu">College of Engineering.</a><br>
+              <h5>Engineers Week is a project of the <a href="http://esc.berkeley.edu">Engineering Student Council</a> of UC Berkeley's <a href="http://coe.berkeley.edu">College of Engineering.</a><br>
 
-              Interested in helping? <a href="https://docs.google.com/forms/d/10eb8oCXqJwZnYp5V5aT5jKmpEbCuezONcKk389tDfgs/viewform" target="_blank">Sign Up</a> and we'll tell you how! Have Questions? email andreaowu at berkeley.edu<br>
+              Interested in helping? <a href="https://docs.google.com/forms/d/10eb8oCXqJwZnYp5V5aT5jKmpEbCuezONcKk389tDfgs/viewform" target="_blank">Sign Up</a>! Have Questions? email andreaowu at berkeley.edu<br>
 
               Icons by Gabriela Wantah. Built by Andrea Wu and RJ Sheperd using <a href="http://www.angularjs.org">angular.js</a>.
           </footer>
@@ -216,15 +216,50 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
       <script>
-        $('a').click(function() {
+	function iconScroll(url) {
+	 var text = url.substring(27);
+	 var activity = "<h3 style='text-align: center;margin-top:18px;font-size:20px;'>- - ";
+         if (text === "speaker") {
+                 text = "Speaker";
+                 activity += "Dean Drako Kickoff - - Closing Remarks";
+             } else if (text === "outreach") {
+                 text = "Outreach";
+                 activity += "Engineering for Kids";
+             } else if (text === "meetEat") {
+                 text = "Meet and Eat";
+                 activity += "Milk and Cookies - - Showcase - - Breakfast<br>&nbsp - - Carnival - - Casino Night";
+             } else if (text === "compete") {
+                 text = "Compete";
+                 activity += "Puzzle Hunt - - Build & Design - - Duct Taping";
+             } else if (text == "prodev") {
+		 text = "Professional Development";
+		 activity += "Networking";
+	     } else {
+		if (text === "monday") {
+		    text = "Monday";
+		    activity += "Milk and Cookies - - Dean Drako Keynote<br> - - Showcase";
+	     	} else if (text === "tuesday") {
+		    text = "Tuesday";
+		    activity += "Breakfast - - Puzzle Hunt<br>&nbsp - - Innovations Talk";
+	     	} else if (text === "wednesday") {
+		    text = "Wednesday";
+		    activity += "Breakfast - - Networking";
+		} else if (text === "thursday") {
+		    text = "Thursday";
+		    activity += "Duct Taping - - Design & Build<br>&nbsp - - Closing Remarks";
+		} else if (text === "friday") {
+		    text = "Friday";
+		    activity += "Carnival - - Casino Night";
+	     	} else {
+		    text = "Saturday";
+		    activity += "E4K";
+	     	}
+	     }
          $('html,body').animate({
 		scrollTop: $('#schedule').offset().top - 100});
-        });
-	
-	function iconScroll() {
-	 var event = document.getElementById("iconRow").getAttribute("href");
-         $('html,body').animate({
-		scrollTop: $('#schedule').offset().top - 100});
+	 document.getElementById("school").innerHTML = "<br>";
+	 document.getElementById("category").innerHTML = text;
+	 document.getElementById("eventsList").innerHTML = activity + "</h3>";
 	 };
 
       </script>

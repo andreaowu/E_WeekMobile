@@ -5,8 +5,9 @@ body {
 }
 
 h5 {
-    margin-left: -50px;
+    margin-left: -65px;
     font-size: 16px;
+    line-height: 20px;
 }
 
 .navbar-inverse {
@@ -16,7 +17,6 @@ h5 {
 
 .navbar-inverse .navbar-nav > li > a {
     opacity: 0.5;
-    border-left: 3px solid #99CCFF;
     font-size: 24px;
     margin-top: -4px;
 }
@@ -50,13 +50,14 @@ h5 {
 }
 
 .jumbotron > h2 {
-    margin-left: -200px;
-    margin-bottom: -30px;
+    margin-left: -240px;
+    margin-bottom: -26px;
     font-family: 'Droid Sans', sans-serif;
+    font-size: 20px;
 }
 
 .jumbotron > h3 {
-    margin-left: 200px;
+    font-size: 20px;
     margin-top: -10px;
 }
 
@@ -82,10 +83,16 @@ h5 {
 .jumbotron .img-circle {
     background-color: #99CCFF;
     border: 2px solid #3399CC;
+    height: 150%;
+    width: 150%;
 }
 
 .jumbotron .img-circle:hover {
-    background-color: #fff;
+    background-color: #FFFFCC;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #E6ECFF;
 }
 
 footer {
@@ -107,8 +114,8 @@ footer > h5 {
 .img-thumbnail {
     border: 3.5px solid #3366CC;
     background-color: #FFFFCC;
-    height: 75%;
-    width: 75%;
+    height: 63%;
+    width: 63%;
 }
 
 @media (max-width: 768px) {
