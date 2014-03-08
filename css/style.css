@@ -90,8 +90,20 @@ h5 {
     background-color: #FFFFCC;
 }
 
+.table-striped {
+    border: 2px solid #3399CC;
+}
+
+.table-striped > thead > tr > th {
+    border-bottom: 2px solid #3399CC;
+} 
+
+th, td, tr {
+    border-bottom: 2px solid #3399CC;
+}
+
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #E6ECFF;
+    background-color: #3366CC;
 }
 
 footer {

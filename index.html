@@ -131,15 +131,17 @@
 
 	      <h2 id="school">UC Berkeley</h2>
               <h1 id="category">Engineers Week</h1>
-              <h3 id="eventsList" style="padding-left:210px;">March 10 - 15, 2014</h3>
+              <h3 id="eventsList"></h3>
+	      <h3 id="date" style="margin-left:150px;">March 10 - 15, 2014</h3>
 
               <div class="row">
                   <div class="col-md-2 eventTags text-center hidden-xs" ng-repeat="eventTag in eventTags | limitTo: 3">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
-                      <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
+                      <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}"></a>
                   </div> 
+
               <!-- Leaderboard -->
-              <div class="col-md-4" ng-controller="MajorListCtrl" style="padding-left:50px">
+              <div class="col-md-5" ng-controller="MajorListCtrl" style="padding-left:100px;padding-right:-100px;">
                   <table class="table table-striped">
                       <thead>
                           <tr>
@@ -156,11 +158,11 @@
                   </table>
               </div>
 
-		  <div class="col-md-2 eventTags text-center hidden-xs" ng-repeat="eventTag in eventTags | filter: {name: 'Professional Development'}">
+		  <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-220px;margin-left:100px;" ng-repeat="eventTag in eventTags | filter: {name: 'Professional Development'}">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
                       <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
                   </div> 
-		 <div class="col-md-2 eventTags text-center hidden-xs" ng-repeat="eventTag in eventTags | filter: {name: 'Outreach'}">
+		 <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:-220px;margin-left:325px;" ng-repeat="eventTag in eventTags | filter: {name: 'Outreach'}">
                       <a href="#{{eventTag.link}}" onclick="iconScroll(this.href)">
                       <img class="img-responsive img-circle" style="width:150%;height:auto" src="{{eventTag.imgUrl}}">
                   </div>
@@ -251,16 +253,16 @@
 	     } else {
 		if (text === "monday") {
 		    text = "Monday";
-		    activity += "Milk and Cookies - - Dean Drako Keynote<br> - - Showcase";
+		    activity += "Milk and Cookies - - Dean Drako Keynote - - Showcase";
 	     	} else if (text === "tuesday") {
 		    text = "Tuesday";
-		    activity += "Breakfast - - Puzzle Hunt<br>&nbsp - - Innovations Talk";
+		    activity += "Breakfast - - Puzzle Hunt - - Innovations Talk";
 	     	} else if (text === "wednesday") {
 		    text = "Wednesday";
 		    activity += "Breakfast - - Networking";
 		} else if (text === "thursday") {
 		    text = "Thursday";
-		    activity += "Duct Taping - - Design & Build<br>&nbsp - - Closing Remarks";
+		    activity += "Duct Taping - - Design & Build - - Closing Remarks";
 		} else if (text === "friday") {
 		    text = "Friday";
 		    activity += "Carnival - - Casino Night";
@@ -272,8 +274,10 @@
          $('html,body').animate({
 		scrollTop: $('#schedule').offset().top - 100});
 	 document.getElementById("school").innerHTML = "<br>";
+	 document.getElementById("date").innerHTML = "";
 	 document.getElementById("category").innerHTML = text;
 	 document.getElementById("eventsList").innerHTML = activity + "</h3>";
+
 	 };
 
       </script>
