@@ -2,18 +2,6 @@
 
 eweekApp.controller('MajorListCtrl', function ($scope) {
 	$scope.majors = [
-		{"name": "EECS",
-			"event-scores": [
-				{"event":"Engineering Showcase", "event-score":30},
-				{"event":"Puzzle Hunt", "event-score":30},
-				{"event":"Design & Build", "event-score":30},
-				{"event":"Carnival", "event-score":30},
-				{"event":"Duct Tape Competition", "event-score":30},
-				{"event":"E4K", "event-score":30},
-				{"event":"Box Tops", "event-score":30},
-				{"event":"Most Spirited Major", "event-score":30}
-			],
-			"score": 0},
 		{"name": "BioEngineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -62,6 +50,31 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Most Spirited Major", "event-score":30}
 			],
 			"score": 0},
+		{"name": "EECS",
+			"event-scores": [
+				{"event":"Engineering Showcase", "event-score":30},
+				{"event":"Puzzle Hunt", "event-score":30},
+				{"event":"Design & Build", "event-score":30},
+				{"event":"Carnival", "event-score":30},
+				{"event":"Duct Tape Competition", "event-score":30},
+				{"event":"E4K", "event-score":30},
+				{"event":"Box Tops", "event-score":30},
+				{"event":"Most Spirited Major", "event-score":30}
+			],
+			"score": 0},
+		{"name": "Engineering Sciences",
+			"event-scores": [
+				{"event":"Engineering Showcase", "event-score":30},
+				{"event":"Puzzle Hunt", "event-score":30},
+				{"event":"Design & Build", "event-score":30},
+				{"event":"Carnival", "event-score":30},
+				{"event":"Duct Tape Competition", "event-score":30},
+				{"event":"E4K", "event-score":30},
+				{"event":"Box Tops", "event-score":30},
+				{"event":"Most Spirited Major", "event-score":30}
+			],
+			"score": 0},
+
 		{"name": "IEOR",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -110,35 +123,10 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Most Spirited Major", "event-score":30}
 			],
 			"score": 0},
-		{"name": "Engineering Sciences",
-			"event-scores": [
-				{"event":"Engineering Showcase", "event-score":30},
-				{"event":"Puzzle Hunt", "event-score":30},
-				{"event":"Design & Build", "event-score":30},
-				{"event":"Carnival", "event-score":30},
-				{"event":"Duct Tape Competition", "event-score":30},
-				{"event":"E4K", "event-score":30},
-				{"event":"Box Tops", "event-score":30},
-				{"event":"Most Spirited Major", "event-score":30}
-			],
-			"score": 0},
-		{"name": "Undeclared",
-			"event-scores": [
-				{"event":"Engineering Showcase", "event-score":30},
-				{"event":"Puzzle Hunt", "event-score":30},
-				{"event":"Design & Build", "event-score":30},
-				{"event":"Carnival", "event-score":30},
-				{"event":"Duct Tape Competition", "event-score":30},
-				{"event":"E4K", "event-score":30},
-				{"event":"Box Tops", "event-score":30},
-				{"event":"Most Spirited Major", "event-score":30}
-			],
-			"score": 0}
 	];
 
 	$scope.orderProp = '-score';
 	$scope.limitNum = 10;
-	$scope.leaderboardShrink = "See all majors.";
 
 	var seeAll = false;
 
@@ -182,7 +170,7 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"day": "Monday",
 			"dateTime":"3/12, 6-8 PM",
 			"location": "Hearst Mining Building",
-			"description": "The engineering showcase is a chance for all clubs to show off the projects and devices that they have been working on. Located directly outside and after the kickoff event, each group will be set up to show you their work, so come check out what our Berkeley engineers have been building! If you or your club has completed a cool engineering project, sign up to show it! Don't be shy.",
+			"description": "The engineering showcase is a chance for all clubs to show off the projects and devices that they have been working on. Located directly outside and after the kickoff event, each group will be set up to show you their work, so come check out what our Berkeley engineers have been building!",
 			"tag": "Meet & Eat",
 			"imgUrl": "img/showcase.png"},
 		{"name": "Breakfast",
@@ -194,9 +182,9 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"imgUrl": "img/breakfast.png"},
 		{"name": "Carnival",
 			"day": "Friday",
-			"dateTime":"3/14, 1-4 PM",
+			"dateTime":"3/14, 2-4 PM",
 			"location": "Bechtel Terrace",
-			"description": "The annual E-week carnival is one of the most highly anticipated events of the week! The carnival will feature, snacks, music, games, and of course lots and lots of pie. This event is a fun way to see what different clubs do and for you to meet fellow engineers outside an academic setting. If you have an idea for a carnival game as part of a club, sign up to do a booth!",
+			"description": "The annual E-week carnival is one of the most highly anticipated events of the week! The carnival will feature, snacks, music, games, and of course lots and lots of pie. This event is a fun way to see what different clubs do and for you to meet fellow engineers outside an academic setting.",
 			"tag": "Meet & Eat",
 			"imgUrl": "img/carnival.png"},
 		{"name": "Casino Night",

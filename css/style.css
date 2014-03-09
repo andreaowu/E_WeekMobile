@@ -54,8 +54,8 @@ h5 {
 }
 
 .jumbotron > h2 {
-    margin-left: -280px;
-    margin-bottom: -26px;
+    margin-left: -300px;
+    margin-bottom: -20px;
     margin-top: -20px;
     font-family: 'Droid Sans', sans-serif;
     font-size: 24px;
@@ -90,7 +90,7 @@ h5 {
 
 .jumbotron .img-circle {
     background-color: #99CCFF;
-    border: 2px solid #3399CC;
+    border: 5px solid #3399CC;
     height: 150%;
     width: 150%;
 }
@@ -100,15 +100,15 @@ h5 {
 }
 
 .table-striped {
-    border: 2px solid #3399CC;
+    border: 2px solid #99CCFF;
 }
 
 .table-striped > thead > tr > th {
-    border-bottom: 2px solid #3399CC;
+    border-bottom: 2px solid #99CCFF;
 } 
 
 th, td, tr {
-    border-bottom: 2px solid #3399CC;
+    border-bottom: 2px solid #99CCFF;
     text-align: center;
 }
 
