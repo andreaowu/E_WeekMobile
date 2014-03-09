@@ -1,6 +1,6 @@
 <div ng-repeat="eventTag in eventTags | filter:customFilter | limitTo:limit">
         <div class="row">
-            <div class="col-md-6" ng-repeat="event in events | filter:eventTag.name" ng-init="index">
+            <div class="col-md-6" ng-repeat="event in events | filter:eventTag.name">
 		<h4 style="font-size: 24px;"><b>{{event.name}}</b></h4>
                 <div class="row">
                     <div class="col-xs-4">
@@ -13,8 +13,7 @@
                 </div>
 		<br>
   		<p>{{event.description}}</p>
-                    </div><div class="row">
-                </span>
+                </div><div class="row">
             </div>
 
         </div>

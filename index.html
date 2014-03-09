@@ -37,8 +37,8 @@
                     </strong>
                     <div class="visible-md visible-lg">
                         <h6>Milk and Cookies<br/>
-                            Dean Drako Talk<br/>
-                            Showcases</h6>
+                            Dean Drako Keynote<br/>
+                            Showcase</h6>
                         </div>
                     </div>
                 </a>
@@ -52,7 +52,7 @@
                 <div class="span6 visible-md visible-lg">
                     <h6>Breakfast<br/>
                         Puzzle Hunt<br/>
-                        Innovations Talk</h6>
+                        Berkeley BioLabs Talk</h6>
                     </div>
                 </div>
             </a>
@@ -79,7 +79,7 @@
         <div class="span6 visible-md visible-lg">
             <h6>Duct Taping<br/>
                 Design & Build<br/>
-                Closing Remarks</h6>
+                Boeing Talk</h6>
             </div>
         </div>
     </a>
@@ -132,7 +132,7 @@
 	      <h2 id="school">UC Berkeley</h2>
               <h1 id="category">Engineers Week</h1>
               <h3 id="eventsList"></h3>
-	      <h3 id="date" style="margin-left:150px;">March 10 - 15, 2014</h3>
+	      <h3 id="date" style="margin-left:250px;">March 10 - 15, 2014</h3>
 
               <div class="row">
                   <div class="col-md-2 eventTags text-center hidden-xs" style="margin-top:70px;" ng-repeat="eventTag in eventTags | limitTo: 3">
@@ -146,13 +146,13 @@
                       <thead>
                           <tr>
                               <th>Rank</th>
-                              <th>Major</th>
+                              <th style="text-align:left;">Major</th>
                               <th>Score</th>
                           </tr>
                       </thead>
                       <tr ng-repeat="major in majors | orderBy:orderProp | limitTo: limitNum" ng-init="index">
                           <td>{{$index + 1}}</td>
-                          <td>{{major.name}}</td>
+                          <td style="text-align:left;">{{major.name}}</td>
                           <td>{{major.score}}</td>
                       </tr>
                   </table>
@@ -201,30 +201,6 @@
 
 
       <script type="text/ng-template" id="/pages/all-events.html">
-          <div ng-repeat="eventTag in eventTags">
-              <div class="page-header">
-                <h1>{{eventTag.name}}</h1><a name="{{eventTag.link}}"></a>
-              </div>
-              <div class="row">
-                  <div class="col-md-6" ng-repeat="event in events | filter:eventTag.name" ng-init="index">
-                      <div class="row">
-                          <div class="col-xs-4">
-                              <img class="img-thumbnail" src="{{event.imgUrl}}"/>
-                          </div>
-                          <div class="col-xs-8">
-                              <h4>{{event.name}}</h4>
-                              <h5><b>Where?</b> {{event.location}}</h5>
-                              <h5><b>When?</b> {{event.day}} {{event.dateTime}}</h5>
-                              <p>{{event.description}}</p>
-                          </div>
-                      </div>
-                      <span ng-init="rowCount = (((index + 1) % 2) == 0)" ng-if="rowCount">
-                          </div><div class="row">
-                      </span>
-                  </div>
-
-              </div>
-          </div>
       </script>
 
       <!-- Load scripts at end to be zoom zoom -->
@@ -243,10 +219,10 @@
                  activity += "Engineering for Kids";
              } else if (text === "meetEat") {
                  text = "Meet and Eat";
-                 activity += "Milk and Cookies - - Showcase - - Breakfast<br>&nbsp - - Carnival - - Casino Night";
+                 activity += "Milk and Cookies - - Showcase - - Breakfast - - Carnival - - Casino Night";
              } else if (text === "compete") {
                  text = "Compete";
-                 activity += "Puzzle Hunt - - Build & Design<br>&nbsp - - Duct Taping";
+                 activity += "Puzzle Hunt - - Build & Design - - Duct Taping";
              } else if (text == "prodev") {
 		 text = "Professional Development";
 		 activity += "Networking";
