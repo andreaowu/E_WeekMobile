@@ -11,21 +11,21 @@ h5 {
 }
 
 h6 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     text-align: left;
 }
 
 .navbar-inverse {
     background-color: #3366CC;
-    height: 147px;
+    height: 130px;
     border: none;
     opacity: 0.9;
 }
 
 .navbar-inverse .navbar-nav > li > a {
     opacity: 0.6;
-    font-size: 24px;
+    font-size: 16px;
     margin-top: -4px;
     border-left: 3px solid #99CCFF;
     line-height: 20px;
@@ -35,7 +35,7 @@ h6 {
     text-align: left;
     color: #FFCC00;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 .navbar-inverse .navbar-nav > li > a > .row-fluid > .visible-md > h6 {
@@ -104,7 +104,7 @@ h6 {
 
 .jumbotron .img-circle {
     background-color: #99CCFF;
-    border: 5px solid #3399CC;
+    border: 2px solid #3399CC;
     height: 150%;
     width: 150%;
 }

@@ -13,7 +13,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 212.29},
 		{"name": "Chemical Engineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":100},
@@ -25,7 +25,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":80},
 				{"event":"Most Spirited Major", "event-score":1000}
 			],
-			"score": 0},
+			"score": 135.84},
 		{"name": "Civil Engineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -37,7 +37,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 217.17},
 		{"name": "Computer Science (L&S)",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -61,7 +61,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 494.55},
 		{"name": "Engineering Sciences",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -73,8 +73,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
-
+			"score": 89.94},
 		{"name": "IEOR",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -86,7 +85,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 474.76},
 		{"name": "Materials Science and Eng.",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -98,7 +97,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 30.93},
 		{"name": "Mechanical Engineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -110,7 +109,7 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 442.58},
 		{"name": "Nuclear Engineering",
 			"event-scores": [
 				{"event":"Engineering Showcase", "event-score":30},
@@ -122,11 +121,11 @@ eweekApp.controller('MajorListCtrl', function ($scope) {
 				{"event":"Box Tops", "event-score":30},
 				{"event":"Most Spirited Major", "event-score":30}
 			],
-			"score": 0},
+			"score": 3.9},
 	];
 
 	$scope.orderProp = '-score';
-	$scope.limitNum = 10;
+	$scope.limitNum = 9;
 
 	var seeAll = false;
 
@@ -156,7 +155,7 @@ eweekApp.controller('EventListCtrl', function($scope, $routeParams) {
 			"day": "Wednesday",
 			"dateTime":"3/12, 7-9 PM",
 			"location": "Kvamme Atrium",
-			"description": "Come meet industry professionals and talk to them about their professional experiences. A variety of different engineering companies will be here: Boeing, Stryker, Berkeley BioLabs, Inkling, Chevron, and Samsung. Hor d'oeuvres will be served!",
+			"description": "Come meet industry professionals and talk to them about their professional experiences. A variety of different engineering companies will be here: Boeing, Stryker, Berkeley BioLabs, Palo Alto Networks, Adap.tv, Chevron, and Samsung. Hor d'oeuvres will be served!",
 			"tag": "Professional Development",
 			"imgUrl": "img/networking.png"},
 		{"name": "Milk and Cookies",
